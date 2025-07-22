@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiverse - Ko</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr)); /* This would force exactly 3 columns */
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .project-card {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        transition: transform 0.2s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      .project-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+      .project-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        opacity: 0.8;
+      }
+      .project-link {
+        display: inline-block;
+        margin-top: 0.5rem;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="background">
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="/media/ascii.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="content">
+      <h1 class="blog-title">Multiverse</h1>
+      <p>A collection of my GitHub projects</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">ChitChatApp</h3>
+          <p class="project-description">
+            A real-time chat application built with Flask and Socket.IO. Features Google OAuth for secure authentication, enabling instant message exchange between users. Built using Python, Flask, Socket.IO, and modern front-end technologies.
+          </p>
+          <a href="https://github.com/ChitChatX/ChitChatApp" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+        
+        <div class="project-card">
+          <h3 class="project-title">Paper Trail</h3>
+          <p class="project-description">
+            A modern note-taking web application with light/dark mode, built using React and FastAPI. Features user authentication, responsive UI, and PostgreSQL backend. Utilizes Vite, Tailwind CSS, and Docker for a robust development experience.
+          </p>
+          <a href="https://paper-trail-v9yd.onrender.com/" class="project-link" target="_blank">View Live Demo →</a>
+        </div>
+        
+        <div class="project-card">
+          <h3 class="project-title">Project 3</h3>
+          <p class="project-description">
+            Description of my third project goes here.
+          </p>
+          <a href="#" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+      </div>
+
+      <a href="index.html" class="back-link">← back home</a>
+    </div>
+    <div class="audio-container">
+      <button id="audio" class="paused">play</button>
+    </div>
+  </body>
+</html>

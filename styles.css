@@ -58,13 +58,11 @@ body::after {
   }
 }
 
-/* Adjust link color for better visibility with glow */
 a {
   color: #5595fa; /* Slightly lighter blue */
   text-decoration: none;
 }
 
-/* Optionally, increase glow on hover for interactive elements */
 a:hover,
 button:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.1),
@@ -100,7 +98,7 @@ ul {
   color: rgb(255, 255, 255);
   line-height: 1.5;
   background-color: transparent;
-  padding: 150px;
+  padding: 100px;
   position: relative;
   z-index: 1;
   overflow: hidden;
