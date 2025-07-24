@@ -3,72 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multiverse - Ko</title>
+    <title>Multiverse - Software Engineering Apprenticeship | Kofi Boateng</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <meta name="description" content="Kofi Boateng's journey through Multiverse's Software Engineering Apprenticeship and current work at Verizon">
+    <meta property="og:title" content="Multiverse Apprenticeship - Kofi Boateng">
+    <meta property="og:description" content="Software Engineering Apprenticeship experience and current projects">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kofiboateng.com/multiverse.html">
   </head>
   <body>
-    <button class="theme-switch">theme</button>
+    <header>
+      <nav class="nav-container" aria-label="Navigation controls">
+        <a href="/" class="home-button" aria-label="Go to home page">home</a>
+        <button class="theme-switch" aria-label="Toggle theme">theme</button>
+      </nav>
+    </header>
+    
     <div class="background">
-      <video autoplay muted loop playsinline class="background-video">
+      <video autoplay muted loop playsinline class="background-video" aria-hidden="true">
         <source src="/media/ascii.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="content">
-      <h1 class="blog-title">Multiverse - Software Engineering Apprenticeship</h1>
-          <p class="project-description">
-            Completed an intensive 3-month software engineering bootcamp covering:
-            <ul>
-              <li>Software Development Life Cycle (SDLC)</li>
-              <li>CI/CD Pipelines and DevOps Practices</li>
-              <li>Frontend Development (HTML, CSS, JavaScript, React)</li>
-              <li>Backend Development (APIs, Databases, Server Architecture)</li>
-              <li>Cloud Deployment and Infrastructure</li>
-            </ul>
-            Following the bootcamp, joined Verizon's engineering team where I:
-            <ul>
-              <li>Implemented AI solutions to optimize team workflows</li>
-              <li>Developed ML predictive models for customer acquisition programs</li>
-              <li>Collaborated with cross-functional teams on system architecture</li>
-              <li>Contributed to technical decision-making and feature implementation</li>
-            </ul>
-          </p>
-      
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3 class="project-title"></h3>
-        </div>
-        <div class="project-card">
-          <h3 class="project-title">Verizon Free Trial Program</h3>
-          <p class="project-description">
-            Currently working on the team responsible for Verizon's free trial program:
+    
+    <main class="content">
+      <section>
+        <h1 class="blog-title">Multiverse - Software Engineering Apprenticeship</h1>
+        <p class="project-description">
+          Completed an intensive 3-month software engineering bootcamp covering:
+        </p>
+        <ul>
+          <li>Software Development Life Cycle (SDLC)</li>
+          <li>CI/CD Pipelines and DevOps Practices</li>
+          <li>Frontend Development (HTML, CSS, JavaScript, React)</li>
+          <li>Backend Development (APIs, Databases, Server Architecture)</li>
+          <li>Cloud Deployment and Infrastructure</li>
+        </ul>
+        
+        <p class="project-description">
+          Following the bootcamp, joined Verizon's engineering team where I:
+        </p>
+        <ul>
+          <li>Implemented AI solutions to optimize team workflows</li>
+          <li>Developed ML predictive models for customer acquisition programs</li>
+          <li>Collaborated with cross-functional teams on system architecture</li>
+          <li>Contributed to technical decision-making and feature implementation</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="blog-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3 class="project-title">Verizon Free Trial Program</h3>
+            <p class="project-description">
+              Currently working on the team responsible for Verizon's free trial program:
+            </p>
             <ul>
               <li>Maintaining and enhancing trial subscription systems</li>
               <li>Integrating AI/ML solutions to improve user experience</li>
               <li>Collaborating with cross-functional teams to implement new features</li>
               <li>Contributing to system architecture and technical decisions</li>
             </ul>
-          </p>
-        </div>
+          </article>
 
-        <div class="project-card">
-          <h3 class="project-title">Notable Projects</h3>
-          <p class="project-description">
-            <strong>ChitChatApp:</strong> A real-time chat application built with Flask and Socket.IO, featuring Google OAuth authentication.<br><br>
-            <strong>Paper Trail:</strong> A modern note-taking web application with light/dark mode, built using React and FastAPI.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/ChitChatX/ChitChatApp" class="project-link" target="_blank">View ChitChat →</a>
-            <a href="https://paper-trail-v9yd.onrender.com/" class="project-link" target="_blank">View Paper Trail →</a>
+          <article class="project-card">
+            <h3 class="project-title">ChitChatApp</h3>
+            <p class="project-description">
+              A real-time chat application built with Flask and Socket.IO, featuring Google OAuth authentication. 
+              This project demonstrates real-time communication, user authentication, and modern web development practices.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/ChitChatX/ChitChatApp" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Paper Trail</h3>
+            <p class="project-description">
+              A modern note-taking web application with light/dark mode, built using React and FastAPI. 
+              Features include rich text editing, note organization, and responsive design.
+            </p>
+            <div class="project-links">
+              <a href="https://paper-trail-v9yd.onrender.com/" class="project-link" target="_blank" rel="noopener">Live Demo →</a>
+              <a href="https://github.com/kytranada/paper-trail" class="project-link" target="_blank" rel="noopener">View Code →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Portfolio Site</h3>
+            <p class="project-description">
+              This very portfolio site you're looking at! Built with vanilla HTML, CSS, and JavaScript. 
+              Features include theme switching, audio controls, responsive design, and optimized performance.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/kytranada/portfolio-site" class="project-link" target="_blank" rel="noopener">View Source →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="blog-title">Technical Skills</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 class="project-title">Languages & Frameworks</h3>
+            <ul>
+              <li>Python (Flask, FastAPI, Pandas, Scikit-learn)</li>
+              <li>JavaScript (React, Node.js, Express)</li>
+              <li>HTML5 & CSS3</li>
+              <li>Rust (learning)</li>
+              <li>SQL (PostgreSQL, MySQL)</li>
+            </ul>
+          </div>
+          
+          <div class="project-card">
+            <h3 class="project-title">Tools & Technologies</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Docker & Kubernetes</li>
+              <li>AWS & Google Cloud Platform</li>
+              <li>CI/CD (GitHub Actions, Jenkins)</li>
+              <li>Linux & Command Line</li>
+            </ul>
+          </div>
+          
+          <div class="project-card">
+            <h3 class="project-title">AI/ML</h3>
+            <ul>
+              <li>Machine Learning (Supervised & Unsupervised)</li>
+              <li>Deep Learning (TensorFlow, PyTorch)</li>
+              <li>Natural Language Processing</li>
+              <li>Model Deployment & MLOps</li>
+              <li>Data Visualization</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </section>
 
-      <a href="index.html" class="back-link">← back home</a>
-    </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html" class="back-link">← back home</a>
+      </nav>
+    </main>
+    
     <div class="audio-container">
-      <button id="audio" class="paused">♪</button>
+      <button id="audio" class="paused" aria-label="Toggle audio">♪</button>
     </div>
   </body>
 </html>

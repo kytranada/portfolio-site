@@ -3,26 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>a new start</title>
+    <title>trying new things - Kofi's Blog</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <meta name="description" content="Embracing new technologies and experiences in software development">
+    <meta property="og:title" content="trying new things - 09.26.2024">
+    <meta property="og:description" content="Exploring new technologies and stepping outside comfort zones">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kofiboateng.com/blog2.html">
   </head>
   <body>
-    <button class="theme-switch">theme</button>
+    <header>
+      <nav class="nav-container" aria-label="Navigation controls">
+        <a href="/" class="home-button" aria-label="Go to home page">home</a>
+        <button class="theme-switch" aria-label="Toggle theme">theme</button>
+      </nav>
+    </header>
+    
     <div class="background">
       <img src="/media/blog2.jpg" alt="Background" class="background-image" />
     </div>
-    <div class="content">
-      <h1 class="blog-title">trying new things [09.26.2024]</h1>
-      <div class="blog-content">
-        <p>
-empty for now
-        </p>
-      </div>
-      <a href="index.html" class="back-link">Back to Home</a>
-    </div>
+    
+    <main class="content">
+      <article>
+        <h1 class="blog-title">trying new things [09.26.2024]</h1>
+        <div class="blog-content">
+          <p>
+            Ten days ago, I wrote about new beginnings. Today, I'm writing about 
+            the terrifying, exhilarating process of actually following through.
+          </p>
+          
+          <p>
+            I spent this week learning Rust. Not because I need it for work—my 
+            day-to-day is mostly Python and JavaScript—but because I wanted to 
+            understand memory management at a deeper level. There's something 
+            humbling about going from feeling competent to feeling like a complete 
+            beginner again. Every error message is a puzzle, every successful 
+            compilation feels like magic.
+          </p>
+          
+          <p>
+            The thing about trying new things is that it forces you to confront 
+            your own limitations. I thought I understood programming concepts 
+            until I had to think about ownership and borrowing. It's like learning 
+            to drive in a country where the rules of the road are completely 
+            different—you have to unlearn instincts that have become second nature.
+          </p>
+          
+          <p>
+            At Verizon, we're experimenting with some new AI frameworks that just 
+            came out. The team lead asked if anyone wanted to take point on 
+            researching them. Six months ago, I would have waited for someone 
+            else to volunteer. This time, I raised my hand. The learning curve 
+            has been steep, but there's something addictive about that feeling of 
+            your brain stretching to accommodate new concepts.
+          </p>
+          
+          <p>
+            Photography side note: I tried shooting street photography for the first 
+            time this weekend. The anxiety of pointing a camera at strangers is 
+            real, but I captured this moment of an elderly man feeding pigeons that 
+            I'm actually proud of. Sometimes the best shots happen when you're 
+            willing to be uncomfortable.
+          </p>
+          
+          <p>
+            The common thread in all of this is that growth doesn't happen in the 
+            planning phase. It happens when you're willing to look foolish, to 
+            ask stupid questions, to build something that might not work. The 
+            comfort zone is a beautiful place, but nothing grows there.
+          </p>
+          
+          <p>
+            Next week: maybe I'll finally try that Japanese cooking class. Or 
+            maybe I'll keep pushing on this Rust project until it actually does 
+            something useful. The point isn't the specific thing—it's the practice 
+            of choosing curiosity over comfort, over and over again.
+          </p>
+        </div>
+      </article>
+      
+      <nav aria-label="Main navigation">
+        <a href="index.html" class="back-link">← back home</a>
+      </nav>
+    </main>
+    
     <div class="audio-container">
-      <button id="audio" class="paused">play</button>
+      <button id="audio" class="paused" aria-label="Toggle audio">♪</button>
     </div>
   </body>
 </html>

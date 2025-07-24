@@ -3,68 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ko</title>
+    <title>Kofi Boateng - Software Engineer</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <meta name="description" content="Kofi Boateng - Software Engineer at Verizon specializing in AI/ML solutions. Portfolio showcasing projects, blog, and technical journey.">
+    <meta name="keywords" content="software engineer, AI, machine learning, Verizon, portfolio, web development">
+    <meta name="author" content="Kofi Boateng">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Kofi Boateng - Software Engineer">
+    <meta property="og:description" content="Software Engineer at Verizon working on AI/ML solutions. Exploring the intersection of technology and human experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kofiboateng.com">
+    <meta property="og:image" content="https://kofiboateng.com/media/profile.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kofi Boateng - Software Engineer">
+    <meta name="twitter:description" content="Software Engineer at Verizon working on AI/ML solutions. Exploring the intersection of technology and human experience.">
+    <meta name="twitter:image" content="https://kofiboateng.com/media/profile.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/media/profile.png">
   </head>
   <body>
-    <button class="theme-switch">theme</button>
+    <header>
+      <nav class="nav-container" aria-label="Navigation controls">
+        <a href="/" class="home-button" aria-label="Go to home page">home</a>
+        <button class="theme-switch" aria-label="Toggle theme">theme</button>
+      </nav>
+    </header>
+    
     <div class="background">
-      <video autoplay muted loop playsinline class="background-video">
+      <video autoplay muted loop playsinline class="background-video" aria-hidden="true">
         <source src="/media/ascii.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="content">
-      <img src="/media/profile.png" alt="Kofi Boateng" class="profile-image" />
-      <div class="header-text">
-        <h1>Kofi Boateng</h1>
-        <p>Software Engineer</p>
+
+    <main class="content">
+      <section class="profile-section" aria-labelledby="profile-heading">
+        <img src="/media/profile.png" alt="Kofi Boateng profile picture" class="profile-image" loading="lazy" />
+        <div class="header-text">
+          <h1 id="profile-heading">Kofi Boateng</h1>
+          <p class="role">Software Engineer</p>
+          <p class="bio">
+            Hey! My name is Kofi and I'm a software engineer currently at Verizon. 
+            I enjoy learning new technologies, taking photos, and going on
+            adventures around the world with my fiancé. Currently, I'm learning
+            about AI and how it can be used to solve real-world problems.
+          </p>
+        </div>
+      </section>
+
+      <nav class="links-section" aria-labelledby="links-heading">
+        <h2 id="links-heading">Connect & Explore</h2>
+        
+        <section aria-labelledby="social-heading">
+          <h3 id="social-heading">Professional Links</h3>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/kytranada?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kofiboatengx" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/kxnvas" target="_blank" rel="noopener noreferrer" aria-label="Photography Instagram">
+                photography
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="projects-nav-heading">
+          <h3 id="projects-nav-heading">Projects & Experience</h3>
+          <ul class="social-links">
+            <li>
+              <a href="multiverse.html" aria-label="Multiverse Software Engineering Apprenticeship">
+                multiverse apprenticeship
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="blog-heading">
+          <h3 id="blog-heading">Recent Blog Posts</h3>
+          <ul class="blog-links">
+            <li>
+              <a href="blog.html" aria-label="Read blog post: new start - 09.16.2024">
+                new start - 09.16.2024
+              </a>
+            </li>
+            <li>
+              <a href="blog2.html" aria-label="Read blog post: trying new things - 09.26.2024">
+                trying new things - 09.26.2024
+              </a>
+            </li>
+            <li>
+              <a href="#" class="archive-link" aria-label="View blog archive">
+                archive...
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+
+      <aside class="contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get In Touch</h2>
         <p>
-          Hey! My name is Kofi and I'm a software engineer currently at Verizon. 
-          I enjoy learning new technologies, taking photos, and going on
-          adventures around the world with my fiance. Currently, I'm learning
-          about AI and how it can be used to solve real-world problems.
+          Always interested in connecting with fellow developers, photographers, 
+          or anyone passionate about technology and creativity. 
+          <a href="https://www.linkedin.com/in/kofiboatengx" target="_blank" rel="noopener noreferrer">
+            Drop me a message on LinkedIn
+          </a> or check out my 
+          <a href="https://github.com/kytranada" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a> to see what I'm working on.
         </p>
-      </div>
-      <ul>
-        <li>
-          links
-          <ul>
-            <li>
-              <a
-                href="https://github.com/kytranada?tab=repositories"
-                target="_blank"
-                >github</a
-              >
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/kofiboatengx" target="_blank"
-                >linkedin</a
-              >
-            </li>
-            <li>
-              <a href="https://instagram.com/kxnvas" target="_blank"
-                >photography</a
-              >
-            </li>
-            <li>
-              <a href="multiverse.html">multiverse apprenticeship</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          blog posts
-          <ul>
-            <li><a href="blog.html">new start - 09.16.2024</a></li>
-            <li><a href="blog2.html">trying new things - 09.26.2024</a></li>
-            <li><a href="#">archive...</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+      </aside>
+    </main>
+
     <div class="audio-container">
-      <button id="audio" class="paused">♪</button>
+      <button id="audio" class="paused" aria-label="Toggle audio">♪</button>
     </div>
   </body>
 </html>

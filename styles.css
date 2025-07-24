@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow: auto;
   background-color: #000000;
   font-family: 'Courier New', Courier, monospace;
   position: relative;
@@ -240,18 +240,30 @@ ul {
   margin-top: 15px;
 }
 
-/* Theme Switch Styles */
-.theme-switch {
+/* Navigation Styles */
+.nav-container {
   position: fixed;
   top: 20px;
   left: 20px;
   z-index: 1000;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.home-button,
+.theme-switch {
   font-family: inherit;
   cursor: pointer;
   background-color: transparent;
   color: white;
   border: none;
   text-decoration: underline;
+}
+
+/* Light theme styles */
+body.light-theme .home-button {
+  color: #000000;
 }
 
 /* Light theme styles */
