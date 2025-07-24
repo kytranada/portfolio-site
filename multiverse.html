@@ -8,6 +8,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <button class="theme-switch">theme</button>
     <div class="background">
       <video autoplay muted loop playsinline class="background-video">
         <source src="/media/ascii.mp4" type="video/mp4" />
@@ -15,39 +16,59 @@
       </video>
     </div>
     <div class="content">
-      <h1 class="blog-title">Multiverse</h1>
-      <p>A collection of my GitHub projects</p>
+      <h1 class="blog-title">Multiverse - Software Engineering Apprenticeship</h1>
+          <p class="project-description">
+            Completed an intensive 3-month software engineering bootcamp covering:
+            <ul>
+              <li>Software Development Life Cycle (SDLC)</li>
+              <li>CI/CD Pipelines and DevOps Practices</li>
+              <li>Frontend Development (HTML, CSS, JavaScript, React)</li>
+              <li>Backend Development (APIs, Databases, Server Architecture)</li>
+              <li>Cloud Deployment and Infrastructure</li>
+            </ul>
+            Following the bootcamp, joined Verizon's engineering team where I:
+            <ul>
+              <li>Implemented AI solutions to optimize team workflows</li>
+              <li>Developed ML predictive models for customer acquisition programs</li>
+              <li>Collaborated with cross-functional teams on system architecture</li>
+              <li>Contributed to technical decision-making and feature implementation</li>
+            </ul>
+          </p>
       
       <div class="projects-grid">
         <div class="project-card">
-          <h3 class="project-title">ChitChatApp</h3>
-          <p class="project-description">
-            A real-time chat application built with Flask and Socket.IO. Features Google OAuth for secure authentication, enabling instant message exchange between users. Built using Python, Flask, Socket.IO, and modern front-end technologies.
-          </p>
-          <a href="https://github.com/ChitChatX/ChitChatApp" class="project-link" target="_blank">View on GitHub →</a>
+          <h3 class="project-title"></h3>
         </div>
-        
         <div class="project-card">
-          <h3 class="project-title">Paper Trail</h3>
+          <h3 class="project-title">Verizon Free Trial Program</h3>
           <p class="project-description">
-            A modern note-taking web application with light/dark mode, built using React and FastAPI. Features user authentication, responsive UI, and PostgreSQL backend. Utilizes Vite, Tailwind CSS, and Docker for a robust development experience.
+            Currently working on the team responsible for Verizon's free trial program:
+            <ul>
+              <li>Maintaining and enhancing trial subscription systems</li>
+              <li>Integrating AI/ML solutions to improve user experience</li>
+              <li>Collaborating with cross-functional teams to implement new features</li>
+              <li>Contributing to system architecture and technical decisions</li>
+            </ul>
           </p>
-          <a href="https://paper-trail-v9yd.onrender.com/" class="project-link" target="_blank">View Live Demo →</a>
         </div>
-        
+
         <div class="project-card">
-          <h3 class="project-title">Project 3</h3>
+          <h3 class="project-title">Notable Projects</h3>
           <p class="project-description">
-            Description of my third project goes here.
+            <strong>ChitChatApp:</strong> A real-time chat application built with Flask and Socket.IO, featuring Google OAuth authentication.<br><br>
+            <strong>Paper Trail:</strong> A modern note-taking web application with light/dark mode, built using React and FastAPI.
           </p>
-          <a href="#" class="project-link" target="_blank">View on GitHub →</a>
+          <div class="project-links">
+            <a href="https://github.com/ChitChatX/ChitChatApp" class="project-link" target="_blank">View ChitChat →</a>
+            <a href="https://paper-trail-v9yd.onrender.com/" class="project-link" target="_blank">View Paper Trail →</a>
+          </div>
         </div>
       </div>
 
       <a href="index.html" class="back-link">← back home</a>
     </div>
     <div class="audio-container">
-      <button id="audio" class="paused">play</button>
+      <button id="audio" class="paused">♪</button>
     </div>
   </body>
 </html>
