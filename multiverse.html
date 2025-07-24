@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multiverse - Software Engineering Apprenticeship | Kofi Boateng</title>
+    <title>Thrive Apprentice: Product Development at Verizon | Kofi Boateng</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <meta name="description" content="Kofi Boateng's journey through Multiverse's Software Engineering Apprenticeship and current work at Verizon">
-    <meta property="og:title" content="Multiverse Apprenticeship - Kofi Boateng">
-    <meta property="og:description" content="Software Engineering Apprenticeship experience and current projects">
+    <meta name="description" content="Kofi Boateng's experience as a Thrive Apprentice in Product Development at Verizon, working on high-impact AI/ML projects">
+    <meta property="og:title" content="Thrive Apprentice: Product Development at Verizon - Kofi Boateng">
+    <meta property="og:description" content="Working on high-impact projects including automated data processing platforms, business intelligence dashboards, and ML models for customer acquisition">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kofiboateng.com/multiverse.html">
   </head>
@@ -17,6 +17,8 @@
       <nav class="nav-container" aria-label="Navigation controls">
         <a href="/" class="home-button" aria-label="Go to home page">home</a>
         <button class="theme-switch" aria-label="Toggle theme">theme</button>
+        <button id="video-control" class="video-control playing" aria-label="Toggle video">video: on</button>
+        <button id="audio" class="audio-control paused" aria-label="Toggle audio">♪</button>
       </nav>
     </header>
     
@@ -29,77 +31,88 @@
     
     <main class="content">
       <section>
-        <h1 class="blog-title">Multiverse - Software Engineering Apprenticeship</h1>
+        <h1 class="blog-title">Thrive Apprentice: Product Development <br /> at Verizon</h1>
         <p class="project-description">
-          Completed an intensive 3-month software engineering bootcamp covering:
+          As a Thrive Apprentice in Product Development at Verizon, I've worked on high-impact projects that directly contribute to business outcomes. My key accomplishments include:
+        </p>
+        
+        <h2 class="blog-title">Automated High-Volume Device Data Processing Platform</h2>
+        <p class="project-description">
+          Designed and implemented a fully automated Python-based solution that replaced a manual multi-step workflow involving two databases and Excel. This system evolved into a full-stack web application capable of processing over <strong>750,000 device records</strong> to date, achieving a <strong>95% reduction in processing time</strong>. This achievement earned a recognition award.
         </p>
         <ul>
-          <li>Software Development Life Cycle (SDLC)</li>
-          <li>CI/CD Pipelines and DevOps Practices</li>
-          <li>Frontend Development (HTML, CSS, JavaScript, React)</li>
-          <li>Backend Development (APIs, Databases, Server Architecture)</li>
-          <li>Cloud Deployment and Infrastructure</li>
+          <li><strong>Scalable Backend Architecture:</strong> Designed and built a robust, high-throughput asynchronous backend using Python. Optimized for performance by managing concurrent API requests for non-blocking, rapid data ingestion.</li>
+          <li><strong>Interactive UI & Visualization:</strong> Developed a user-friendly interface enabling non-technical stakeholders to manage batch jobs and generate automated reports. Integrated an interactive dashboard with Plotly to provide real-time insights into processing metrics, device data, and API performance.</li>
         </ul>
         
+        <h2 class="blog-title">Actionable Business Intelligence Dashboard</h2>
         <p class="project-description">
-          Following the bootcamp, joined Verizon's engineering team where I:
+          Built and managed a Looker dashboard for a flagship customer acquisition program. This dashboard aggregates data from Teradata and GCP then provides real-time KPIs (orders, activations, churn) that helps inform strategic decisions on trial participant profiles and device histories as well as fraud prevention.
         </p>
-        <ul>
-          <li>Implemented AI solutions to optimize team workflows</li>
-          <li>Developed ML predictive models for customer acquisition programs</li>
-          <li>Collaborated with cross-functional teams on system architecture</li>
-          <li>Contributed to technical decision-making and feature implementation</li>
-        </ul>
+        
+        <h2 class="blog-title">ML Model Development for Customer Acquisition</h2>
+        <p class="project-description">
+          Currently building a predictive classification model on the Google Cloud Platform to optimize a flagship customer acquisition program. Responsible for the full MLOps lifecycle, including data pipelines, model training, deployment, and performance monitoring.
+        </p>
       </section>
 
       <section aria-labelledby="projects-heading">
         <h2 id="projects-heading" class="blog-title">Featured Projects</h2>
         <div class="projects-grid">
           <article class="project-card">
-            <h3 class="project-title">Verizon Free Trial Program</h3>
+            <h3 class="project-title">Automated Device Data Processing Platform</h3>
             <p class="project-description">
-              Currently working on the team responsible for Verizon's free trial program:
+              A full-stack web application that processes over 750,000 device records with a 95% reduction in processing time:
             </p>
             <ul>
-              <li>Maintaining and enhancing trial subscription systems</li>
-              <li>Integrating AI/ML solutions to improve user experience</li>
-              <li>Collaborating with cross-functional teams to implement new features</li>
-              <li>Contributing to system architecture and technical decisions</li>
+              <li>Python-based asynchronous backend for high-throughput data ingestion</li>
+              <li>Interactive dashboard with Plotly for real-time processing metrics</li>
+              <li>User-friendly interface for non-technical stakeholders to manage batch jobs</li>
+              <li>Earned recognition award for significant business impact</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <h3 class="project-title">ChitChatApp</h3>
+            <h3 class="project-title">Customer Churn Prediction & Visualization</h3>
             <p class="project-description">
-              A real-time chat application built with Flask and Socket.IO, featuring Google OAuth authentication. 
-              This project demonstrates real-time communication, user authentication, and modern web development practices.
+              Complete customer churn prediction solution for a telecom dataset, achieving 92% accuracy with a tuned XGBoost Classifier model.
             </p>
+            <ul>
+              <li>Engineered a user-interactive web application using Streamlit</li>
+              <li>Geospatial churn mapping with Plotly for visual insights</li>
+              <li>Live prediction tool for new customers</li>
+              <li>Identification of key churn risk factors</li>
+            </ul>
             <div class="project-links">
-              <a href="https://github.com/ChitChatX/ChitChatApp" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+              <!-- Add GitHub link if available -->
             </div>
           </article>
 
           <article class="project-card">
-            <h3 class="project-title">Paper Trail</h3>
+            <h3 class="project-title">AI-Powered YouTube Video Summarizer</h3>
             <p class="project-description">
-              A modern note-taking web application with light/dark mode, built using React and FastAPI. 
-              Features include rich text editing, note organization, and responsive design.
+              Python application that automates the summarization of YouTube video content by integrating the YouTube Transcript and Google Gemini API.
             </p>
+            <ul>
+              <li>API integration with YouTube Transcript and Google Gemini</li>
+              <li>NLP text processing for content summarization</li>
+              <li>Efficient workflow automation tools</li>
+            </ul>
             <div class="project-links">
-              <a href="https://paper-trail-v9yd.onrender.com/" class="project-link" target="_blank" rel="noopener">Live Demo →</a>
-              <a href="https://github.com/kytranada/paper-trail" class="project-link" target="_blank" rel="noopener">View Code →</a>
+              <!-- Add GitHub link if available -->
             </div>
           </article>
 
           <article class="project-card">
-            <h3 class="project-title">Portfolio Site</h3>
+            <h3 class="project-title">Business Intelligence Dashboard</h3>
             <p class="project-description">
-              This very portfolio site you're looking at! Built with vanilla HTML, CSS, and JavaScript. 
-              Features include theme switching, audio controls, responsive design, and optimized performance.
+              Looker dashboard for a flagship customer acquisition program aggregating data from Teradata and GCP.
             </p>
-            <div class="project-links">
-              <a href="https://github.com/kytranada/portfolio-site" class="project-link" target="_blank" rel="noopener">View Source →</a>
-            </div>
+            <ul>
+              <li>Real-time KPIs (orders, activations, churn) visualization</li>
+              <li>Strategic decision support for trial participant profiles</li>
+              <li>Fraud prevention insights</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -108,35 +121,35 @@
         <h2 id="skills-heading" class="blog-title">Technical Skills</h2>
         <div class="projects-grid">
           <div class="project-card">
-            <h3 class="project-title">Languages & Frameworks</h3>
+            <h3 class="project-title">Languages</h3>
             <ul>
-              <li>Python (Flask, FastAPI, Pandas, Scikit-learn)</li>
-              <li>JavaScript (React, Node.js, Express)</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>SQL</li>
               <li>HTML5 & CSS3</li>
-              <li>Rust (learning)</li>
-              <li>SQL (PostgreSQL, MySQL)</li>
             </ul>
           </div>
           
           <div class="project-card">
-            <h3 class="project-title">Tools & Technologies</h3>
+            <h3 class="project-title">AI/ML & Data Science</h3>
             <ul>
-              <li>Git & GitHub</li>
-              <li>Docker & Kubernetes</li>
-              <li>AWS & Google Cloud Platform</li>
-              <li>CI/CD (GitHub Actions, Jenkins)</li>
-              <li>Linux & Command Line</li>
-            </ul>
-          </div>
-          
-          <div class="project-card">
-            <h3 class="project-title">AI/ML</h3>
-            <ul>
+              <li>Large Language Models (LLM), Generative AI, Agentic AI</li>
+              <li>Retrieval-augmented generation (RAG), Model Context Protocol (MCP)</li>
+              <li>Langchain, Scikit-learn, Pandas, NumPy, XGBoost</li>
+              <li>Matplotlib, Seaborn, Plotly</li>
               <li>Machine Learning (Supervised & Unsupervised)</li>
-              <li>Deep Learning (TensorFlow, PyTorch)</li>
-              <li>Natural Language Processing</li>
-              <li>Model Deployment & MLOps</li>
-              <li>Data Visualization</li>
+            </ul>
+          </div>
+          
+          <div class="project-card">
+            <h3 class="project-title">Frameworks & Platforms</h3>
+            <ul>
+              <li>Flask, Streamlit, React, Spring Boot, Node.js</li>
+              <li>Google Cloud Platform (GCP), BigQuery</li>
+              <li>Git, Docker, Kubernetes</li>
+              <li>CI/CD (GitHub Actions, Jenkins)</li>
+              <li>Agile/Scrum, Test-Driven Development (TDD)</li>
             </ul>
           </div>
         </div>
@@ -146,9 +159,5 @@
         <a href="index.html" class="back-link">← back home</a>
       </nav>
     </main>
-    
-    <div class="audio-container">
-      <button id="audio" class="paused" aria-label="Toggle audio">♪</button>
-    </div>
   </body>
 </html>

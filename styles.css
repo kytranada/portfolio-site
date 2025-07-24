@@ -158,22 +158,22 @@ ul {
   }
 }
 
-.audio-container {
-  position: fixed;
-  left: 20px;
-  top: 60px;
-  transform: none;
-  z-index: 1000;
-  overflow: hidden;
-}
-
-#audio {
+.audio-control, .video-control {
   font-family: inherit;
   cursor: pointer;
   background-color: transparent;
   color: white;
   border: none;
   text-decoration: underline;
+}
+
+.video-control {
+  margin-left: 10px;
+}
+
+body.light-theme .audio-control, 
+body.light-theme .video-control {
+  color: #000000;
 }
 
 @media (max-width: 600px) {
@@ -363,7 +363,7 @@ body.light-theme .home-button {
 }
 
 body.light-theme {
-  background-color: #f5f5f5;
+  background-color: #e4e1e1;
   color: #000000;
 }
 
