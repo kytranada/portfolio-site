@@ -65,15 +65,21 @@ if (video) {
 
 let themeSwitch = document.querySelector('.theme-switch');
 let currentTheme = localStorage.getItem('theme') || 'dark';
+const themeToggle = document.querySelector('.theme-switch');
+const MOON_SYMBOL = '☾';
+const SUN_SYMBOL = '☀';
 
-if (currentTheme === 'light') {
-  document.body.classList.add('light-theme');
+// Load saved theme
+if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light-theme');
+    themeToggle.textContent = SUN_SYMBOL;
+} else {
+    themeToggle.textContent = MOON_SYMBOL;
 }
 
-if (themeSwitch) {
-  themeSwitch.addEventListener('click', () => {
+// Single event listener for theme toggle
+themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
-    currentTheme = document.body.classList.contains('light-theme') ? 'light' : 'dark';
-    localStorage.setItem('theme', currentTheme);
-  });
-}
+    themeToggle.textContent = document.body.classList.contains('light-theme') ? SUN_SYMBOL : MOON_SYMBOL;
+    localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+});
