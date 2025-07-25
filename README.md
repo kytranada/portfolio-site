@@ -39,8 +39,4 @@ This website serves as my personal portfolio and creative space, featuring multi
 
 ## Contact
 
-[Add your contact information here]
-
----
-
-Created and maintained by [Your Name]
+Kofi.BoatengX@gmail.com
