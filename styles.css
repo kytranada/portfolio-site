@@ -157,8 +157,13 @@ body.light-theme .project-card {
 @media (max-width: 768px) {
   .background-video,
   .background-image {
-    transform: none;
-    mask-image: radial-gradient(circle at center, var(--bg-color) 0%, transparent 90%);
+    transform: translateX(10%);
+    mask-image: radial-gradient(circle at center, var(--bg-color) 0%, transparent 85%);
+    object-position: center;
+  }
+  
+  .background-video {
+    object-fit: cover;
   }
 }
 
@@ -166,6 +171,11 @@ body.light-theme .project-card {
   .content { padding: 6.25rem 0.625rem; }
   .header-text h1, .blog-title { font-size: 2rem; }
   .nav-container { top: 10px; left: 10px; }
+  
+  .background-video,
+  .background-image {
+    transform: translateX(5%);
+  }
 }
 
 @media (max-width: 480px) {
@@ -177,5 +187,11 @@ body.light-theme .project-card {
   .home-button, .theme-switch, .video-control, .audio-control {
     font-size: 0.9rem;
     padding: 4px;
+  }
+  
+  .background-video,
+  .background-image {
+    transform: translateX(0);
+    mask-image: radial-gradient(circle at center, var(--bg-color) 0%, transparent 80%);
   }
 }
