@@ -153,6 +153,22 @@ body.light-theme .project-card {
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* ASCII Credit Section */
+.ascii-credit {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.8rem;
+}
+
+.ascii-credit h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ascii-credit p {
+  margin: 0;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
   .background-video,

@@ -57,3 +57,7 @@ The Multiverse section showcases my journey as a Thrive Apprentice at Verizon, h
 ## Contact
 
 Kofi.BoatengX@gmail.com
+
+## ASCII Video Generation
+
+The ASCII video effect on the homepage was created using the [video-to-ascii](https://github.com/joelibaceta/video-to-ascii) repository.
