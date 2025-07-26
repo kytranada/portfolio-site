@@ -158,6 +158,6 @@ body.light-theme .project-card {
   .background-video,
   .background-image {
     transform: translateX(0);
-    mask-image: radial-gradient(circle at center, var(--bg-color) 0%, transparent 85%);
+    /* mask-image: radial-gradient(circle at center, var(--bg-color) 0%, transparent 95%); */
   }
 }
