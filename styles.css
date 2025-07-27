@@ -178,23 +178,7 @@ body.light-theme .project-card {
 @media (max-width: 768px) {
   .background-video,
   .background-image {
-    mask-image: none;
     transform: translateX(0);
-  }
-
-  .video-control {
-    display: none;
-  }
-
-  .initial-play-button {
-    display: inline-block;
-  }
-
-  .video-control.playing {
-    display: inline-block;
-  }
-  
-  .initial-play-button.hidden {
-    display: none;
+    mask-image: radial-gradient(circle at right, var(--bg-color) 0%, transparent 78%);
   }
 }
