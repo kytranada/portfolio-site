@@ -1,5 +1,6 @@
 let audioButton = document.getElementById('audio');
 let videoButton = document.getElementById('video-control');
+let initialPlayButton = document.getElementById('initial-play-button');
 let audio;
 let video = document.querySelector('.background-video');
 
@@ -48,7 +49,14 @@ if (videoButton) {
   videoButton.addEventListener('click', toggleVideo);
 }
 
-// Initialize video state
+if (initialPlayButton) {
+  initialPlayButton.addEventListener('click', () => {
+    video.play();
+    initialPlayButton.classList.add('hidden');
+    videoButton.style.display = 'inline-block'; 
+  });
+}
+
 if (video) {
   video.addEventListener('play', () => {
     videoButton.textContent = 'video: on';
